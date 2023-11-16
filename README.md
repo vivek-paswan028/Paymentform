@@ -1,2 +1,2 @@
 # Paymentform
-created a cool Payment form using html css
+created a cool Responsive Payment form using html css
