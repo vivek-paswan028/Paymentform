@@ -1,79 +1,70 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    padding: 8px;
+    font-size: 17px;
+}
+.container{
+    padding: 5px 20px 15px 20px;
+    border: 5px solid rgb(144, 229, 238);
+    background-color: lightgreen;
+    border-radius: 5px;
+    
+}
+input[type = "text"],
+input[type = "email"],
+input[type = "number"],
+input[type = "password"],
+input[type = "date"],
+select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 5px solid lightgreen;
+    margin: 8px;
 
-        body{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        section{    
-            background-color: #001d30;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            animation: changebg 5s linear infinite;
-            
-        }
-        @keyframes changebg {
-            to{
-                filter: hue-rotate(360deg);
-            }
-            /* 0%{
-                background-color: rgb(0, 81, 255);
-            }
-            20%{
-                background-color: rgb(255, 0, 200);
-            }
-            40%{
-                background-color: rgba(250, 57, 32, 0.993);
-            }
-            60%{
-                background-color: rgb(255, 0, 76);
-            }
-            80%{
-                background-color: rgb(255, 145, 0);
-            }
-            100%{
-                background-color: rgb(27, 212, 58);
-            } */
-        }
-        .loading{
-             
-           position: absolute;
-           width: 150px;
-           height: 150px;
-           background: linear-gradient(to top , #001d30 40% , #51eee5);
-           border-radius: 50%;
-           animation: rotate 2s linear infinite;
-        }
-        @keyframes rotate{
-            0%{
-                transform: rotate(0deg)
-            }
-            100%{
-                transform: rotate(360deg);
-            }
-        }
-        .loading::before{
-            content: "";
-            position: absolute;
-            background-color: #001d30;
-            inset: 20px 20px 0 0;
-            border-radius: 50%;
-        }
-        .loading::after{
-            content: "";
-            position: absolute;
-            top: 50px;
-            right: -8px;
-            border-radius: 50%;
-            background-color: #51eee5;
-            height: 35px;
-            width: 35px;
-            box-shadow:0 0 5px #51eee5,
-                       0 0 25px  #51eee5 , 
-                       0 0 50px  #51eee5 ,
-                       0 0 75px  #51eee5 ;
-        }
+}
+fieldset{
+    background-color: aliceblue;
+    border-color: 1px solid #ffffff;
+    border-collapse: collapse;
+}
+.main{
+    text-align: center;
+    color: rgb(33, 104, 244);
+    border: 1px;
+    border-radius: 5px;
 
-  
+
+}
+input[type="submit"]{
+    text-align: center;
+    background-color: rgb(88, 144, 229);
+    border-radius: 5px;
+    width: 150px;
+    height: 35px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    cursor: pointer;
+    box-shadow: 100px solid rgb(88, 144, 229);
+    
+}
+input[type="submit"]:hover{
+    background-color: rgb(6, 248, 6);
+    -webkit-box-shadow: 1px 1px 2px 3px  rgba(9, 185, 9, 0.856);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    1px 1px 2px 3px  rgba(9, 185, 9, 0.856);  /* Firefox 3.5 - 3.6 */
+    box-shadow:         1px 1px 2px 3px rgba(9, 185, 9, 0.856);
+ 
+}
+.shadow {
+    -webkit-box-shadow: 1px 1px 2px 3px royalblue;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    1px 1px 2px 3px royalblue;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         1px 1px 2px 3px royalblue;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  }
+  @media screen {
+      
+  }
