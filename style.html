@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specifity</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        section{    
+            background-color: #001d30;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            animation: changebg 5s linear infinite;
+            
+        }
+        @keyframes changebg {
+            to{
+                filter: hue-rotate(360deg);
+            }
+            /* 0%{
+                background-color: rgb(0, 81, 255);
+            }
+            20%{
+                background-color: rgb(255, 0, 200);
+            }
+            40%{
+                background-color: rgba(250, 57, 32, 0.993);
+            }
+            60%{
+                background-color: rgb(255, 0, 76);
+            }
+            80%{
+                background-color: rgb(255, 145, 0);
+            }
+            100%{
+                background-color: rgb(27, 212, 58);
+            } */
+        }
+        .loading{
+             
+           position: absolute;
+           width: 150px;
+           height: 150px;
+           background: linear-gradient(to top , #001d30 40% , #51eee5);
+           border-radius: 50%;
+           animation: rotate 2s linear infinite;
+        }
+        @keyframes rotate{
+            0%{
+                transform: rotate(0deg)
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .loading::before{
+            content: "";
+            position: absolute;
+            background-color: #001d30;
+            inset: 20px 20px 0 0;
+            border-radius: 50%;
+        }
+        .loading::after{
+            content: "";
+            position: absolute;
+            top: 50px;
+            right: -8px;
+            border-radius: 50%;
+            background-color: #51eee5;
+            height: 35px;
+            width: 35px;
+            box-shadow:0 0 5px #51eee5,
+                       0 0 25px  #51eee5 , 
+                       0 0 50px  #51eee5 ,
+                       0 0 75px  #51eee5 ;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="loading"></div>
+    </section>
+</body>
+</html>

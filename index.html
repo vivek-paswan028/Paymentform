@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment And User Details</title>
+    <link rel="stylesheet" href="specifity.css">
+
+</head>
+<body>
+    <div class="container">
+<form action="">
+    <h1 class="main">Payment Form</h1>
+    <h2>Contact Information</h2>
+    <div> Name :<input type="text" name="Name" required></div>
+    <div>D O B : <input type="date" name="" id="">
+
+
+    </div>
+    <fieldset>
+        <legend>Gender</legend>
+    <div> Male <input type="radio"name="gender"> female <input type="radio" name="gender" required> </div>
+    </fieldset>
+    <br>
+    <div>  Address:<textarea name="address" id="address" cols="50" rows="10"required> </textarea></div>
+    <div > Email ID: <input type="email" name="email" id="email"required></div>
+    <div> Pincode: <input type="number" name="pincode"id="pincode"required></div>
+
+    <hr>
+    <h2>Payment Method</h2>
+    <div> Card Type
+    <select name="card_type" id="card_type" required>
+<option value="select a Card type"> select a Card type</option> <br>
+
+        <option value="Visa"> Visa</option>
+        <option value="Mastercard"> Mastercard</option>
+        <option value="Rupay"> Rupay</option>
+
+    </select>
+
+        <br>
+    </div>
+    <div>Card Number: <input type="number" required></div>
+    <br>
+    <div> Expiry Date: <input type="date" required></div>
+    <br>
+    <div> CVV: <input type="password" name= "cvv"id="cvv" required></div>
+    <br>
+    <div></div>
+    <input class="shadow" type="submit" value="Pay Now">
+</form>
+</div>
+</body>
+</html>
